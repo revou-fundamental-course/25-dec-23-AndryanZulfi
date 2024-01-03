@@ -15,13 +15,13 @@
         <p>Sebuah Web App Sederhana yang berfungsi untuk menghitung nilai Luas dan Keliling segitiga</p>
       </div>
       <div class="btn">
-        <button>Luas segitiga</button>
-        <button>Keliling Segitiga</button>
+        <button id="btn-luas">Luas segitiga</button>
+        <button id="btn-keliling">Keliling Segitiga</button>
       </div>
     </nav>
   </header>
   <main>
-    <div class="card">
+    <div class="card card-luas">
       <div class="container">
         <div class="keterangan">
           <h2>Luas Segitiga</h2>
@@ -42,19 +42,66 @@
         <section>
           <h2>Hitung Luas Segitiga</h2>
           <div class="form">
-            <form>
+            <form class="fr-luas">
               <input class="input1" id="alas" type="number" name="alas" placeholder="Masukkan Alas" required>
               <input class="input2" id="tinggi" type="number" name="tinggi" placeholder="Masukkan Tinggi" required>
               <button class="button-result" name="submit">Hitung</button>
             </form>
           </div>
-          <div class="result">
+          <div class=" result result-luas">
             <ul>
               Hasil:
               <li>L = 1/2 x a x t</li>
               <li>L = 1/2 x ? x ?</li>
               <li>L = ?</li>
             </ul>
+          </div>
+          <div class="btn-reset">
+            <button class="reset-luas">Reset</button>
+          </div>
+        </section>
+
+      </div>
+    </div>
+    <div class="card card-keliling hidden">
+      <div class="container">
+        <div class="keterangan">
+          <h2>Keliling Segitiga</h2>
+          <img src="./assets/imgsegitiga.png" alt="segitiga">
+          <p>Rumus Luas Segitiga yaitu:</p>
+          <span><strong>K = S1 x S2 x S3</strong></span>
+          <ul>
+            <li>Dimana: </li>
+            <li>K: Keliling</li>
+            <li>S1: Sisi Pertama</li>
+            <li>S2: Sisi Kedua</li>
+            <li>S3: Sisi Ketiga</li>
+          </ul>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <section>
+          <h2>Hitung Keliling Segitiga</h2>
+          <div class="form">
+            <form class="fr-keliling">
+              <input id="S1" type="number" name="S1" placeholder="Masukkan S1" required>
+              <input id="S2" type="number" name="S2" placeholder="Masukkan S2" required>
+              <input id="S3" type="Number" name="S3" , placeholder="Masukkan S3">
+              <button class="button-result" name="submit">Hitung</button>
+            </form>
+          </div>
+          <div class="result result-keliling">
+            <ul>
+              Hasil:
+              <li>K = S1 x S2 x S3</li>
+              <li>K = ? x ? x ?</li>
+              <li>K = ?</li>
+            </ul>
+          </div>
+          <div class="btn-reset">
+            <button class="reset-keliling">Reset</button>
           </div>
         </section>
 
